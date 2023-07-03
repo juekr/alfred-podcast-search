@@ -27,7 +27,7 @@ PODCASTINDEX_API_KEY=
 PODCASTINDEX_API_SECRET=
 ```
 
-![podcastindex api credentials.png](podcastindex api credentials.png)
+![podcastindex api credentials](./podcastindex%20%api%20%credentials.png)
 
 ## PHP
 
