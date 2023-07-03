@@ -70,6 +70,14 @@ Hit `Close`.
 
 Next, we have to determine what should happen with the results that are returned via the Python script. You can also activate the debugger on the upper right (the little bug icon) – then you're able to see what happens when the script runs in the background.
 
+## ToDo
+
+- [ ] clean up README
+- [ ] add API credentials to workflow variables (but don't export them)
+- [ ] provide useful icons for search results
+- [ ] add a "do something with the result besides copying it to clipboard" option
+- [ ] keep my git-monitored dev folder in sync with Alfred's workflow folder
+
 ## License
 
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
