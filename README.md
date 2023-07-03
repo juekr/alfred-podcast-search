@@ -149,6 +149,7 @@ By changing the details in the `format_single_for_alfred` function, you can easi
 - [x] clean up README
 - [x] add API credentials to workflow variables (but don't export them)
 - [ ] provide useful icons for search results
+- [ ] use `Configuration Builder` instead of environmental variables
 - [ ] add a "do something with the result besides copying it to clipboard" option
 - [ ] prevent premature <kbd>return</kbd>
 
