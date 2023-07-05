@@ -1,4 +1,4 @@
-# Search podcasts from Alfred productivity tool
+# Alfred Workflow for searching podcasts via PodcastIndex API
 
 ## What this does
 
@@ -6,21 +6,43 @@ Search PodcastIndex' API directly from your (or at least _my_) favorite producti
 
 ![query PodcastIndex via Alfred](./media/what-it-does.gif)
 
-## Prerequisites 
+## Usage
 
-[Alfred Powerpack](https://www.alfredapp.com/powerpack/) is needed, PHP should be installed on your system – if `php -r "echo 'hello world';"` does not throw an error, your setup should be fine.
+Just open up Alfred, type the keyword `podcast` and the your search term. If results are being found, you can choose the podcast you were looking for and either:
 
-## Step 1: clone repository or just download the Alfred workflow
+- <kbd>return</kbd>: copy the podcast's feed into your clipboard
+- <kbd>command</kbd> + <kbd>return</kbd>: copy the podcast's website URL
+- <kbd>option</kbd> + <kbd>return</kbd>: copy the podcast's cover URL
+- <kbd>control</kbd> + <kbd>return</kbd>: copy a dump of all meta info the PodcastIndex api provides about a podcast
 
-📦 Download: [workflow file](https://github.com/juekr/alfred-podcast-search/raw/main/Search%20podcasts%20via%20PodcastIndex%20API.alfredworkflow)
+## Installation
+### Prerequisites 
 
-## Step 2: get PodcastIndex API access
+What you need to start (besides Alfred, obviously):
+1. 👨‍💻 a working PHP installation on your machine
+2. 📦 the actual workflow file from this repository
+3. 👤 an account at [PodcastIndex](https://api.podcastindex.org/)
+4. 🔐 valid credentials in the workflow  
+
+### 1. regarding: PHP
+
+PHP should be installed on your system – if `php -r "echo 'hello world';"` does not throw an error, your setup should be fine. My recommendation would be to set up PHP via [homebrew](https://crunchify.com/how-to-install-php-latest-version-on-macos/).
+
+You can find the code for this workflow [down below](#This-workflows-PHP-code).
+
+### 2. downloading (and installing)
+
+You can either clone this repository or download only the actual [workflow file](https://github.com/juekr/alfred-podcast-search/raw/main/Search%20podcasts%20via%20PodcastIndex%20API.alfredworkflow). If Alfred is installed on your machine, double clicking on the workflow file should import it into the `Workflows` section in Alfred.
+
+You can easily change the search keyword (default: `podcast`) or extend the functionality.
+
+### 3. getting access to PodcastIndex API
 
 Go click yourself a free account: <https://api.podcastindex.org/> – you'll get a password an `API key` and an `API secret` via mail (remember your password, it seems like there is no password-reset function). You can also use this link and login to submit new podcast feeds to PodcastIndex.
 
 📄 Documentation: [example code](https://podcastindex-org.github.io/docs-api/#overview--example-code)
 
-## Step 3: API credentials and basic configuration
+### 4. saving API credentials 
 
 Open the `Workflows` section in Alfred's preferences, choose the workflow named `Search podcasts via PodcastIndex API` and click on the `(x)` icon in the top right. Head over to the tab `Environment Variables` and enter your credentials from earlier with the following keys:
 
@@ -31,9 +53,11 @@ PODCASTINDEX_API_SECRET=
 
 ![podcastindex api credentials](./media/podcastindex%20api%20credentials.png?raw=true)
 
-## PHP
+## This workflow's PHP code
 
-While you're at it, you can check what the PHP code in the workflow does, if you're curious. Or you just trust the random stranger from the internet. To make things easier for you, here's the relevant code:
+You should definitely check what the PHP code in the Alfred workflow does ... or you just trust a random stranger from the internet. 
+
+To make things easier for you, here's the relevant code:
 
 ```php
 <?php
@@ -144,7 +168,7 @@ function format_single_for_alfred($item) {
 ?>
 ```
 
-By changing the details in the `format_single_for_alfred` function, you can easily adapt the workflow to your specific needs. Have fun!
+By changing the details in the `format_single_for_alfred($item)` function, you can easily adapt the workflow to your specific needs. Have fun!
 
 ## ToDo
 
