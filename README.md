@@ -10,10 +10,10 @@ Search PodcastIndex' API directly from your (or at least _my_) favorite producti
 
 Just open up Alfred, type the keyword `podcast` and then after a space your search term. If the API returns results, you can choose the podcast you were looking for and either hit ...
 
-- ... <kbd>return</kbd>: copy the podcast's feed into your clipboard
-- ... <kbd>command</kbd> + <kbd>return</kbd>: copy the podcast's website URL
-- ... <kbd>option</kbd> + <kbd>return</kbd>: copy the podcast's cover URL
-- ... <kbd>control</kbd> + <kbd>return</kbd>: copy a dump of all meta info the PodcastIndex api provides about a podcast
+- ... <kbd>return</kbd>: copy the podcast's feed into your clipboard into your clipboard
+- ... <kbd>command</kbd> + <kbd>return</kbd>: copy the podcast's website URL into your clipboard
+- ... <kbd>option</kbd> + <kbd>return</kbd>: copy the podcast's cover URL into your clipboard
+- ... <kbd>control</kbd> + <kbd>return</kbd>: copy a dump of all meta info the PodcastIndex api provides about a podcast into your clipboard
 
 ## Installation
 ### Prerequisites 
@@ -174,6 +174,7 @@ By changing the details in the `format_single_for_alfred($item)` function, you c
 
 - [x] clean up README
 - [x] add API credentials to workflow variables (but don't export them)
+- [x] make this repository public
 - [ ] provide useful icons for search results
 - [ ] use `Configuration Builder` instead of environmental variables
 - [ ] add a "do something with the result besides copying it to clipboard" option
