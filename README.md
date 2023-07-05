@@ -4,6 +4,8 @@
 
 Search PodcastIndex' API directly from your (or at least _my_) favorite productivity app Alfred!
 
+![alfred podcastindex search](./what-it-does.mov?raw=true)
+
 ## Prerequisites 
 
 [Alfred Powerpack](https://www.alfredapp.com/powerpack/) is needed, PHP should be installed on your system – if `php -r "echo 'hello world';"` does not throw an error, your setup should be fine.
