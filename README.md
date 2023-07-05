@@ -1,16 +1,10 @@
----
-date: 2023-06-26, 15:10
-modified: 2023-07-05, 8:35
-tags: 
----
-
 # Search podcasts from Alfred productivity tool
 
 ## What this does
 
 Search PodcastIndex' API directly from your (or at least _my_) favorite productivity app Alfred!
 
-![query PodcastIndex via Alfred](./what-it-does.gif)
+![query PodcastIndex via Alfred](./media/what-it-does.gif)
 
 ## Prerequisites 
 
@@ -35,7 +29,7 @@ PODCASTINDEX_API_KEY=
 PODCASTINDEX_API_SECRET=
 ```
 
-![podcastindex api credentials](./podcastindex%20api%20credentials.png?raw=true)
+![podcastindex api credentials](./media/podcastindex%20api%20credentials.png?raw=true)
 
 ## PHP
 
