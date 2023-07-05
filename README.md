@@ -8,12 +8,12 @@ Search PodcastIndex' API directly from your (or at least _my_) favorite producti
 
 ## Usage
 
-Just open up Alfred, type the keyword `podcast` and the your search term. If results are being found, you can choose the podcast you were looking for and either:
+Just open up Alfred, type the keyword `podcast` and then after a space your search term. If the API returns results, you can choose the podcast you were looking for and either hit ...
 
-- <kbd>return</kbd>: copy the podcast's feed into your clipboard
-- <kbd>command</kbd> + <kbd>return</kbd>: copy the podcast's website URL
-- <kbd>option</kbd> + <kbd>return</kbd>: copy the podcast's cover URL
-- <kbd>control</kbd> + <kbd>return</kbd>: copy a dump of all meta info the PodcastIndex api provides about a podcast
+- ... <kbd>return</kbd>: copy the podcast's feed into your clipboard
+- ... <kbd>command</kbd> + <kbd>return</kbd>: copy the podcast's website URL
+- ... <kbd>option</kbd> + <kbd>return</kbd>: copy the podcast's cover URL
+- ... <kbd>control</kbd> + <kbd>return</kbd>: copy a dump of all meta info the PodcastIndex api provides about a podcast
 
 ## Installation
 ### Prerequisites 
