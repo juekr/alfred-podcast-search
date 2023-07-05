@@ -1,10 +1,16 @@
+---
+date: 2023-06-26, 15:10
+modified: 2023-07-05, 8:35
+tags: 
+---
+
 # Search podcasts from Alfred productivity tool
 
 ## What this does
 
 Search PodcastIndex' API directly from your (or at least _my_) favorite productivity app Alfred!
 
-[![query PodcastIndex via Alfred](./what-it-does.gif?raw=true)](./what-it-does.mp4)
+![query PodcastIndex via Alfred](./what-it-does.gif)
 
 ## Prerequisites 
 
