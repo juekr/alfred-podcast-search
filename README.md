@@ -4,7 +4,7 @@
 
 Search PodcastIndex' API directly from your (or at least _my_) favorite productivity app Alfred!
 
-![alfred podcastindex search](./what-it-does.mp4?raw=true)
+[![query PodcastIndex via Alfred](./what-it-does.gif?raw=true)](./what-it-does.mp4)
 
 ## Prerequisites 
 
